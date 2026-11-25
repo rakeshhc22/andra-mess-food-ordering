@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand palette — adjust once the mockup's exact hex values are confirmed */
+  --color-maroon: #8b1e2b;
+  --color-maroon-dark: #6b1620;
+  --color-mustard: #e8a33d;
+  --color-mustard-light: #f2c274;
+  --color-cream: #fff8f0;
+  --color-cream-dark: #f5ead9;
+
+  --color-ink: #2b2320;
+  --color-ink-muted: #7a6f68;
+  --color-border: #ecdfd0;
+
+  --font-display: var(--font-playfair), serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+  --radius-chip: 0.875rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
